@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/widgets/section04/bottom_navigation_bar_page.dart';
+import 'package:flutter_basic/widgets/section04/bottom_sheet_page.dart';
 import 'package:flutter_basic/widgets/section04/dialog_snack_page.dart';
+import 'package:flutter_basic/widgets/section04/drawer_page.dart';
 import 'package:flutter_basic/widgets/section04/dropdown_page.dart';
 import 'package:flutter_basic/widgets/section04/tab_bar_page.dart';
 import 'package:flutter_basic/widgets/section04/text_field_page.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BottomNavigationBarPage(),
+      home: DrawerPage(),
     );
   }
 }

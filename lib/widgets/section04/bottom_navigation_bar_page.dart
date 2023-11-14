@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic/widgets/section04/drawer_page.dart';
+import 'package:flutter_basic/widgets/section04/home_page.dart';
 
 class BottomNavigationBarPage extends StatefulWidget {
   const BottomNavigationBarPage({super.key});
@@ -18,9 +20,7 @@ class _BottomNavigationBarPageState extends State<BottomNavigationBarPage> {
     const Center(
       child: Text('Cart'),
     ),
-    const Center(
-      child: Text('Profile'),
-    ),
+    HomePage(),
   ];
 
   @override
@@ -33,7 +33,7 @@ class _BottomNavigationBarPageState extends State<BottomNavigationBarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bottom Navigation Bar'),
+        title: const Text('Bottom Navbar'),
       ),
       body: viewPage[index],
       bottomNavigationBar: BottomNavigationBar(
